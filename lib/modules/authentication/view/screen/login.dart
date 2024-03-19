@@ -44,7 +44,7 @@ class _LoginPageState extends State<LoginPage> {
           }
           if (state is LoginError) {
             context.pop();
-            CustomSnackbar.show(context, 'Something went wrong');
+            CustomSnackbar.show(context, 'User not found');
           }
         },
         child: SafeArea(
